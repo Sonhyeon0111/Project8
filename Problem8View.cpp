@@ -109,8 +109,7 @@ void CProblem8View::OnInitialUpdate()
 {
     CView::OnInitialUpdate();
 
-    // 예전에는 이렇게 썼었지:
-    // Debug/x64 폴더에 map.png 를 두고 상대 경로로 로드
+    // 폴더에 map.png 를 두고 상대 경로로 로드
     if (m_bg.IsNull())
         m_bg.Load(_T("map.png"));
 }
@@ -294,3 +293,4 @@ void CProblem8View::OnLButtonDown(UINT nFlags, CPoint point)
 
     CView::OnLButtonDown(nFlags, point);
 }
+
